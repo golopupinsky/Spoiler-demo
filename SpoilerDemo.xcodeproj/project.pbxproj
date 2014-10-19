@@ -12,18 +12,9 @@
 		58E9966719F4121E00529700 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9966619F4121E00529700 /* AppDelegate.m */; };
 		58E9966919F4121E00529700 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58E9966819F4121E00529700 /* Images.xcassets */; };
 		58E9966C19F4121E00529700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E9966A19F4121E00529700 /* Main.storyboard */; };
-		58E9967819F4121E00529700 /* SpoilerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9967719F4121E00529700 /* SpoilerDemoTests.m */; };
+		58E9968319F4126300529700 /* SpoilerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9968219F4126300529700 /* SpoilerView.m */; };
+		58E9968519F4149F00529700 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 58E9968419F4149F00529700 /* cloud.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		58E9967219F4121E00529700 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 58E9965319F4121E00529700 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 58E9965A19F4121E00529700;
-			remoteInfo = SpoilerDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		58E9965B19F4121E00529700 /* SpoilerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpoilerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,20 +26,13 @@
 		58E9966619F4121E00529700 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		58E9966819F4121E00529700 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		58E9966B19F4121E00529700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		58E9967119F4121E00529700 /* SpoilerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpoilerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		58E9967619F4121E00529700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58E9967719F4121E00529700 /* SpoilerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpoilerDemoTests.m; sourceTree = "<group>"; };
+		58E9968119F4126300529700 /* SpoilerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpoilerView.h; sourceTree = "<group>"; };
+		58E9968219F4126300529700 /* SpoilerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpoilerView.m; sourceTree = "<group>"; };
+		58E9968419F4149F00529700 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		58E9965819F4121E00529700 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		58E9966E19F4121E00529700 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				58E9965D19F4121E00529700 /* SpoilerDemo */,
-				58E9967419F4121E00529700 /* SpoilerDemoTests */,
 				58E9965C19F4121E00529700 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				58E9965B19F4121E00529700 /* SpoilerDemo.app */,
-				58E9967119F4121E00529700 /* SpoilerDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +67,8 @@
 				58E9966619F4121E00529700 /* AppDelegate.m */,
 				58E9966819F4121E00529700 /* Images.xcassets */,
 				58E9966A19F4121E00529700 /* Main.storyboard */,
+				58E9968119F4126300529700 /* SpoilerView.h */,
+				58E9968219F4126300529700 /* SpoilerView.m */,
 				58E9965E19F4121E00529700 /* Supporting Files */,
 			);
 			path = SpoilerDemo;
@@ -93,25 +77,9 @@
 		58E9965E19F4121E00529700 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				58E9968419F4149F00529700 /* cloud.png */,
 				58E9965F19F4121E00529700 /* Info.plist */,
 				58E9966019F4121E00529700 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		58E9967419F4121E00529700 /* SpoilerDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				58E9967719F4121E00529700 /* SpoilerDemoTests.m */,
-				58E9967519F4121E00529700 /* Supporting Files */,
-			);
-			path = SpoilerDemoTests;
-			sourceTree = "<group>";
-		};
-		58E9967519F4121E00529700 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				58E9967619F4121E00529700 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -136,24 +104,6 @@
 			productReference = 58E9965B19F4121E00529700 /* SpoilerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		58E9967019F4121E00529700 /* SpoilerDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 58E9967E19F4121E00529700 /* Build configuration list for PBXNativeTarget "SpoilerDemoTests" */;
-			buildPhases = (
-				58E9966D19F4121E00529700 /* Sources */,
-				58E9966E19F4121E00529700 /* Frameworks */,
-				58E9966F19F4121E00529700 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				58E9967319F4121E00529700 /* PBXTargetDependency */,
-			);
-			name = SpoilerDemoTests;
-			productName = SpoilerDemoTests;
-			productReference = 58E9967119F4121E00529700 /* SpoilerDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,10 +115,6 @@
 				TargetAttributes = {
 					58E9965A19F4121E00529700 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					58E9967019F4121E00529700 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 58E9965A19F4121E00529700;
 					};
 				};
 			};
@@ -186,7 +132,6 @@
 			projectRoot = "";
 			targets = (
 				58E9965A19F4121E00529700 /* SpoilerDemo */,
-				58E9967019F4121E00529700 /* SpoilerDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -196,15 +141,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E9968519F4149F00529700 /* cloud.png in Resources */,
 				58E9966919F4121E00529700 /* Images.xcassets in Resources */,
 				58E9966C19F4121E00529700 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		58E9966F19F4121E00529700 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,28 +155,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				58E9966419F4121E00529700 /* ViewController.m in Sources */,
+				58E9968319F4126300529700 /* SpoilerView.m in Sources */,
 				58E9966119F4121E00529700 /* main.m in Sources */,
 				58E9966719F4121E00529700 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		58E9966D19F4121E00529700 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				58E9967819F4121E00529700 /* SpoilerDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		58E9967319F4121E00529700 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 58E9965A19F4121E00529700 /* SpoilerDemo */;
-			targetProxy = 58E9967219F4121E00529700 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		58E9966A19F4121E00529700 /* Main.storyboard */ = {
@@ -349,42 +273,6 @@
 			};
 			name = Release;
 		};
-		58E9967F19F4121E00529700 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SpoilerDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpoilerDemo.app/Contents/MacOS/SpoilerDemo";
-			};
-			name = Debug;
-		};
-		58E9968019F4121E00529700 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SpoilerDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpoilerDemo.app/Contents/MacOS/SpoilerDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -402,14 +290,6 @@
 			buildConfigurations = (
 				58E9967C19F4121E00529700 /* Debug */,
 				58E9967D19F4121E00529700 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		58E9967E19F4121E00529700 /* Build configuration list for PBXNativeTarget "SpoilerDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				58E9967F19F4121E00529700 /* Debug */,
-				58E9968019F4121E00529700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

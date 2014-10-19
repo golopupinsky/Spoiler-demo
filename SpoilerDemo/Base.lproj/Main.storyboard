@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6198" systemVersion="14A297b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="14A388a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6198"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6246"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -641,12 +641,12 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider=""/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller - Window-->
+        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
@@ -667,15 +667,66 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Vg4-hn-jR3" customClass="SpoilerView">
+                                <rect key="frame" x="228" y="180" width="23" height="19"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oA8-Lb-rbt">
+                                        <rect key="frame" x="-1" y="-3" width="25" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="7PW-m1-RLY"/>
+                                            <constraint firstAttribute="width" constant="25" id="hTr-Md-cYe"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="cloud" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yNY-Po-eZ6">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="btnAction:" target="XfG-lQ-9wD" id="Aug-lW-QTJ"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wXW-OO-HZs">
+                                        <rect key="frame" x="-33" y="-42" width="90" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Cloudy today" id="9nd-Qm-tqx">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="CXa-ga-LHS"/>
+                                    <constraint firstItem="wXW-OO-HZs" firstAttribute="top" secondItem="oA8-Lb-rbt" secondAttribute="bottom" constant="24" id="Crr-rD-AC3"/>
+                                    <constraint firstAttribute="bottom" secondItem="wXW-OO-HZs" secondAttribute="bottom" constant="-42" id="Gek-Mk-W9a"/>
+                                    <constraint firstItem="wXW-OO-HZs" firstAttribute="leading" secondItem="Vg4-hn-jR3" secondAttribute="leading" constant="-31" id="cMU-ZS-Vpn"/>
+                                    <constraint firstAttribute="centerX" secondItem="oA8-Lb-rbt" secondAttribute="centerX" id="iRL-ev-9RP"/>
+                                    <constraint firstAttribute="trailing" secondItem="wXW-OO-HZs" secondAttribute="trailing" constant="-32" id="iqB-yC-4NW"/>
+                                    <constraint firstAttribute="width" constant="23" id="qcW-LZ-Pc7"/>
+                                    <constraint firstItem="oA8-Lb-rbt" firstAttribute="top" secondItem="Vg4-hn-jR3" secondAttribute="top" id="sbT-4D-thO"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Vg4-hn-jR3" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="71" id="Z7Y-Fb-Xjz"/>
+                            <constraint firstAttribute="centerX" secondItem="Vg4-hn-jR3" secondAttribute="centerX" id="c9x-tA-X9P"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cloudView" destination="Vg4-hn-jR3" id="w3E-rk-Y6S"/>
+                        <outlet property="cloudViewHeight" destination="CXa-ga-LHS" id="rlM-fF-gXB"/>
+                        <outlet property="cloudViewWidth" destination="qcW-LZ-Pc7" id="rRC-yo-KlU"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cloud" width="128" height="128"/>
+    </resources>
 </document>

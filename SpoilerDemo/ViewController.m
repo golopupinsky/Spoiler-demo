@@ -7,19 +7,23 @@
 //
 
 #import "ViewController.h"
+#import "SpoilerView.h"
 
 @implementation ViewController
+{
+    __weak IBOutlet SpoilerView *cloudView;
+    __weak IBOutlet NSLayoutConstraint *cloudViewWidth;
+    __weak IBOutlet NSLayoutConstraint *cloudViewHeight;
 
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Do any additional setup after loading the view.
+    [cloudView setupDuration:2 constraints:@[cloudViewWidth,cloudViewHeight] dstValues:@[@160,@100]corners:10];
 }
 
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
+- (IBAction)btnAction:(id)sender {
+    [cloudView toggleState];
 }
 
 @end
