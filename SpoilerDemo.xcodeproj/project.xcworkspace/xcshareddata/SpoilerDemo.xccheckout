@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FA2C1A5D-27D7-4A51-A607-4ECA9CE9F016</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SpoilerDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C0039D25F39545F518D9725F1E6AD1DF1E759281</key>
+		<string>https://github.com/golopupinsky/Spoiler-demo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SpoilerDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C0039D25F39545F518D9725F1E6AD1DF1E759281</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/golopupinsky/Spoiler-demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C0039D25F39545F518D9725F1E6AD1DF1E759281</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C0039D25F39545F518D9725F1E6AD1DF1E759281</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SpoilerDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
