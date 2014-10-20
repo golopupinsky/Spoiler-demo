@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [cloudView setupDuration:2 constraints:@[cloudViewWidth,cloudViewHeight] dstValues:@[@160,@100]corners:10];
+    [cloudView setupDuration:.5 constraints:@[cloudViewWidth,cloudViewHeight] dstValues:@[@160,@120]corners:10];
 }
 
 - (IBAction)btnAction:(id)sender {
